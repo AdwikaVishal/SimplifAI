@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Agentic AI Text Explainer",
+  "version": "1.0",
+  "description": "Select text to get AI explanations in a floating tooltip.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "http://localhost:8000/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  }
+}
